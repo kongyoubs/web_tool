@@ -1,1 +1,8 @@
 .idea
+
+Codex/
+_download_*.py
+_gen_*.py
+_beautify.py
+_edit_*.py
+_ai_insert.html

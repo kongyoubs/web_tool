@@ -123,3 +123,24 @@ footer.main-footer .footer-text a:hover {
 
 
 
+
+/* AI 工具卡片图标美化 - 优雅的 hover 效果 */
+.url-card .url-img:has(i) {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.url-card .url-body:hover .url-img:has(i) {
+    transform: scale(1.08);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+
+
+/* AI 工具图片卡片悬停效果 */
+.url-card .url-img img[src*="logos"] {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+.url-card .url-body:hover .url-img img[src*="logos"] {
+    transform: scale(1.08);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+}
