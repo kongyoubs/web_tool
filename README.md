@@ -364,8 +364,8 @@ MIT License
 
 ## 联系方式
 
-- GitHub: https://github.com/geeeeeeeek
-- 个人主页: https://web.gitapp.cn
+- GitHub: https://github.com/kongyoubs
+- 个人主页: https://web.kongyou.ccwu.cc
 - Email: kongyoubs@gmail.com
 
 ---
