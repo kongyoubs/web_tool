@@ -16,7 +16,7 @@
 ## 在线预览
 
 - GitHub Pages: https://geeeeeeeek.github.io/web_tool/
-- Vercel: https://web-tool-omega.vercel.app/
+- Vercel: https://web.kongyou.ccwu.cc
 - Cloudflare Pages: https://web-a55.pages.dev/
 
 ## 快速开始
