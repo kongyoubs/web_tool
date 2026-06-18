@@ -402,7 +402,7 @@ Issues and Pull Requests are welcome!
 
 - GitHub: https://github.com/geeeeeeeek
 - Website: https://web.gitapp.cn
-- Email: kefu308@gmail.com
+- Email: kongyoubs@gmail.com
 
 ---
 
