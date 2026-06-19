@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://geeeeeeeek.github.io/web_tool/sitemap.xml

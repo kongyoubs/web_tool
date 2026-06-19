@@ -13,6 +13,17 @@
     <link rel="shortcut icon" href="./assets/images/favicon.png" />
     <meta name="keywords" content="在线工具网, AI工具, ChatGPT, DeepSeek, AI导航" />
     <meta name="description" content="在线网址导航, AI工具导航、ChatGPT、Claude、Midjourney、各类开发工具、绘图绘画工具, 在线PS、在线播放器等" />
+    <meta property="og:title" content="网址导航 - 实用的AI工具与开发资源导航" />
+    <meta property="og:description" content="收录最新AI工具、ChatGPT、Claude、Midjourney、开发工具、在线PS等实用资源，一站式导航。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://geeeeeeeek.github.io/web_tool/" />
+    <meta property="og:image" content="https://geeeeeeeek.github.io/web_tool/assets/images/favicon.png" />
+    <meta property="og:site_name" content="网址导航" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="网址导航 - 实用的AI工具与开发资源导航" />
+    <meta name="twitter:description" content="收录最新AI工具、ChatGPT、Claude、Midjourney、开发工具、在线PS等实用资源。" />
+    <meta name="twitter:image" content="https://geeeeeeeek.github.io/web_tool/assets/images/favicon.png" />
+
 
     <link rel="stylesheet" id="block-library-css"
         href="./assets/css/block-library.min-5.6.2.css" type="text/css" media="all" />
@@ -31,6 +42,16 @@
     <script type="text/javascript" src="./assets/js/content-search.js"  id="content-search-js"></script>
 
  
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "网址导航",
+        "url": "https://geeeeeeeek.github.io/web_tool/",
+        "description": "收录最新AI工具、ChatGPT、Claude、Midjourney、开发工具、在线PS等实用资源导航网站。"
+    }
+    </script>
 
 </head>
 
@@ -8627,7 +8648,7 @@
 
             </div>
             <div class="footer-inner">
-                <div class="footer-text">本站内容源自互联网，如有内容侵犯了你的权益，请联系删除相关内容，联系邮箱：kongyoubs@gmail.com <br/>© 2021 - 2023 By <a href="https://github.com/geeeeeeeek/web_tool">Web_tool</a> | <a href="http://beian.miit.gov.cn/">京ICP备2023018588号</a><br/></div>
+                <div class="footer-text">本站内容源自互联网，如有侵犯请联系删除。| 联系邮箱：kongyoubs@gmail.com <br/>© 2021 - 2025 <a href="https://github.com/geeeeeeeek/web_tool"><strong>Web 导航</strong></a> - 收录最新AI工具与开发资源 | <a href="http://beian.miit.gov.cn/">京ICP备2023018588号</a> | <a href="https://github.com/geeeeeeeek/web_tool">GitHub</a> | <a href="./about/index.html">关于</a></div>
             </div>
         </footer>
     </div>
@@ -8925,6 +8946,79 @@ function switchNightMode(){
         $(".mode-ico").removeClass("icon-light");
         $(".mode-ico").addClass("icon-night");
     }
+}
+</script>
+
+<!-- 设为首页引导弹窗 -->
+<div class="modal fade" id="homepage-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"><i class="iconfont icon-star mr-1"></i>设为浏览器主页</h5>
+                <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+            </div>
+            <div class="modal-body text-center">
+                <p class="mb-3">将本站设为主页，每次打开浏览器都能快速找到所需工具！</p>
+                <div class="homepage-guide-steps text-left mb-3" style="max-width:400px;margin:0 auto;">
+                    <p><strong>Chrome/Edge:</strong> 设置 → 启动时 → 打开特定网页 → 添加此站</p>
+                    <p><strong>Firefox:</strong> 选项 → 主页 → 自定义网址 → 粘贴此站</p>
+                    <p><strong>Safari:</strong> 偏好设置 → 通用 → 主页 → 粘贴此站</p>
+                </div>
+                <button class="btn btn-primary copy-url-btn" onclick="copyHomeUrl()">📋 复制本站地址</button>
+                <p class="text-muted mt-2" id="copy-tip" style="display:none;">✅ 已复制！请在浏览器设置中粘贴</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 右侧浮动分享栏 -->
+<div class="side-share-bar">
+    <a href="javascript:" class="share-item share-weibo" onclick="shareToWeibo()" title="分享到微博">
+        <i class="fab fa-weibo"></i>
+    </a>
+    <a href="javascript:" class="share-item share-twitter" onclick="shareToTwitter()" title="分享到Twitter">
+        <i class="fab fa-twitter"></i>
+    </a>
+    <a href="javascript:" class="share-item share-link" onclick="copySiteUrl()" title="复制链接">
+        <i class="fas fa-link"></i>
+    </a>
+</div>
+
+<!-- 浮动「设为首页」按钮 -->
+<div class="set-homepage-float" onclick="$(\
+    <i class="iconfont icon-home"></i>
+    <span>设为首页</span>
+</div>
+
+<script>
+function copyHomeUrl() {
+    var url = window.location.href;
+    if (navigator.clipboard) {
+        navigator.clipboard.writeText(url).then(function() {
+            document.getElementById("copy-tip").style.display = "block";
+            setTimeout(function(){ document.getElementById("copy-tip").style.display = "none"; }, 3000);
+        });
+    } else {
+        var ta = document.createElement("textarea");
+        ta.value = url;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand("copy");
+        document.body.removeChild(ta);
+        document.getElementById("copy-tip").style.display = "block";
+        setTimeout(function(){ document.getElementById("copy-tip").style.display = "none"; }, 3000);
+    }
+}
+function copySiteUrl() { copyHomeUrl(); }
+function shareToWeibo() {
+    var url = encodeURIComponent(window.location.href);
+    var title = encodeURIComponent(document.title);
+    window.open("https://service.weibo.com/share/share.php?url=" + url + "&title=" + title, "_blank");
+}
+function shareToTwitter() {
+    var url = encodeURIComponent(window.location.href);
+    var text = encodeURIComponent(document.title);
+    window.open("https://twitter.com/intent/tweet?text=" + text + "&url=" + url, "_blank");
 }
 </script>
 </body>
