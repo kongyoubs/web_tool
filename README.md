@@ -15,8 +15,8 @@
 
 ## 在线预览
 
-- GitHub Pages: https://geeeeeeeek.github.io/web_tool/
-- Vercel: https://web.kongyou.ccwu.cc
+- GitHub Pages: https://github.com/kongyoubs/web_tool
+- Vercel: https://web.912963.xyz/
 - Cloudflare Pages: https://web-a55.pages.dev/
 
 ## 快速开始
@@ -365,7 +365,7 @@ MIT License
 ## 联系方式
 
 - GitHub: https://github.com/kongyoubs
-- 个人主页: https://web.kongyou.ccwu.cc
+- 个人主页: https://web.912963.xyz
 - Email: kongyoubs@gmail.com
 
 ---
