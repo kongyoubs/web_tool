@@ -27,7 +27,8 @@ body,html{font-size:14px;}
 .header-big:not(.no-bg) .text-muted,.header-big:not(.no-bg) .search-type .menu-item a,.header-big:not(.no-bg) .big-title .h1{color:#334155!important}
 
 /*主页header-banner底部宽度*/
-.post-top{padding-bottom:50px}
+.post-top{padding-bottom:10px}
+.header-big.post-top{padding-top:12px!important;padding-bottom:12px!important}
 
 /*左导航二级导航标题左侧距离*/
 .sidebar-menu-inner ul li ul li a{margin-left:30px;}
@@ -374,6 +375,11 @@ footer.main-footer .footer-text a {
     margin: 0 auto;
 }
 
+/* 搜索表单相对定位，让按钮绝对定位生效 */
+#search-bg .super-search-fm {
+    position: relative;
+}
+
 /* --- 搜索输入框 --- */
 .header-big #search-text {
     background: #ffffff !important;
@@ -399,14 +405,31 @@ footer.main-footer .footer-text a {
     color: #b0bec5 !important;
 }
 
-/* 搜索按钮 */
-.header-big #search button {
+/* 搜索按钮 - 定位到搜索框右侧 */
+.header-big .super-search-fm button {
+    position: absolute !important;
+    top: 50% !important;
+    right: 4px !important;
+    transform: translateY(-50%) !important;
+    background: transparent !important;
+    border: 0 !important;
+    width: 40px !important;
+    height: 40px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 40px !important;
     color: #94a3b8 !important;
     transition: color 0.3s ease !important;
-    right: 4px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
 }
-.header-big #search button:hover {
+.header-big .super-search-fm button:hover {
     color: #5b7db5 !important;
+}
+.header-big .super-search-fm button i {
+    color: inherit !important;
+    font-size: 18px !important;
 }
 
 /* --- 分类标签 --- */
@@ -549,10 +572,10 @@ footer.main-footer .footer-text a {
     color: #6b7390 !important;
 }
 
-.io-black-mode .header-big #search button {
+.io-black-mode .header-big .super-search-fm button {
     color: #6b7390 !important;
 }
-.io-black-mode .header-big #search button:hover {
+.io-black-mode .header-big .super-search-fm button:hover {
     color: #a0b5d8 !important;
 }
 
