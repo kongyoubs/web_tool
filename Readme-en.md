@@ -15,7 +15,7 @@ A web navigation tool based on HTML + CSS + JavaScript, with a clean and beautif
 
 ## Live Demo
 
-- GitHub Pages: https://geeeeeeeek.github.io/web_tool/
+- GitHub Pages: https://kongyoubs.github.io/web_tool/
 - Vercel: https://web-tool-omega.vercel.app/
 - Cloudflare Pages: https://web-a55.pages.dev/
 
