@@ -358,9 +358,13 @@
     </div>
 
 
-<div class="header-big  post-top css-color mb-4" id="search-bg" style="">
+<div class="header-big post-top css-color mb-4" id="search-bg">
+    <div class="hero-decoration"></div>
     <div class="s-search">
-        <div id="search" class="s-search mx-auto">
+        <div class="hero-title">
+            <h1>网址导航</h1>
+            <p class="hero-subtitle">实用的 AI 工具与开发资源一站式导航</p>
+        </div>
             <div id="search-list-menu" class="hide-type-list">
                 <div class="s-type text-center">
                     <div class="s-type-list big">
@@ -596,7 +600,6 @@
             <div class="card search-smart-tips search-hot-text">
                 <ul id="word" style="display: none"></ul>
             </div>
-        </div>
     </div>
 
 </div>
@@ -8909,11 +8912,11 @@ var theme = {"ajaxurl":"","addico":"https:\/\/nav.baidu.cn\/wp-content\/themes\/
     }
 })();
 
-$("#search-bg").css("background-image", "url(assets\/images\/bg-dna.jpg)");
+        // $("#search-bg").css("background-image", "url(assets\/images\/bg-dna.jpg)");
 function switchNightMode(){
     var night = document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1") || '0';
     if(night == '0'){
-	$("#search-bg").css("background-image", "url(assets\/images\/bg-dna.jpg)");
+        // $("#search-bg").css("background-image", "url(assets\/images\/bg-dna.jpg)");
         document.body.classList.remove('io-grey-mode');
         document.body.classList.add('io-black-mode');
         document.cookie = "night=1;path=/"
@@ -8922,7 +8925,7 @@ function switchNightMode(){
         $(".mode-ico").removeClass("icon-night");
         $(".mode-ico").addClass("icon-light");
     }else{
-	$("#search-bg").css("background-image", "url(assets\/images\/bg-dna.jpg)")
+        // $("#search-bg").css("background-image", "url(assets\/images\/bg-dna.jpg)")
         document.body.classList.remove('io-black-mode');
         document.body.classList.add('io-grey-mode');
         document.cookie = "night=0;path=/"
